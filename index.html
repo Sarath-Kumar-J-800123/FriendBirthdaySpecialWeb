@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:teal">
+<br><br><br><br><br><br>
+<div class="container" style="border: 10px solid #54B4D3;
+  border-radius: 20px;
+  padding: 5px;width:500px;background-color:#868e96">
+	<div class="card">
+	 <fieldset style="color:blue">
+  	 <legend style="color:blue"><b>User_Login_Page:-</b></legend>
+		<form>
+			<div class="form-group" align="center">
+				<label>Enter Your User_Name:</label>
+				<input type="text" class="form-control" id="name" name="name" style="width:300px" placeholder="Enter Your User_Name">
+			</div>
+			<div class="form-group" align="center">
+				<label>Enter Your User_Password:</label>
+				<input type="password" class="form-control" id="password" name="password" style="width:300px" placeholder="Enter Your User_Password">
+			</div>
+			<div class="text-center" align="center">
+				<button type="button" id="li-btn" class="btn btn-success" onclick="login()" style="width:150px">Login</button>
+				<button type="reset" id="reg-btn" class="btn btn-primary" style="width:150px">Reset</button>
+			</div>
+			
+		</form>
+		</fieldset>
+	</div><br>
+	<div>
+    	<marquee width="100%" behavior="alternate" bgcolor="cyan" style="color:purple;border:2px solid black""><b>***Only User Can Be Login***</b></marquee>
+    </div> 
+ </div>
+</body>
+<script type="text/javascript">
+function login()
+	{
+	name=document.getElementById("name").value
+	password=document.getElementById("password").value
+		if(name==="P T Sarath Reddy" && password==="ReddySarath")
+		{
+			alert("User LogIn Successfully");
+			window.location.href="home_Page.html";
+		}
+		else
+		{
+			alert("User LogIn Failed");
+		}
+	}
+</script>
+</html>
